@@ -21,9 +21,9 @@ const write = setInterval(()=>{
     if(index === text.innerHTML.length+1) clearInterval(write)}
 },25)
 
-!url.substring(22) ? redirect("portfolio")
-:url.substring(22) === "portfolio" ? redirect("about")
-: redirect()
+// !url.substring(22) ? redirect("portfolio")
+// :url.substring(22) === "portfolio" ? redirect("about")
+// : redirect()
 
 function redirect(path){
   arrow.href = arrow.href.substring(0,22) + (path ? path : "")
